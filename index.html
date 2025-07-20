@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Egg Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">ZidomsChicken<span>Egg</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="Cari produk telur..."
+        />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
+      <!-- Shopping Cart -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img
+            src="img/telur omega 3.jpg"
+            alt="Telur Omega"
+          />
+          <div class="item-detail">
+            <h3>Telur Omega 3</h3>
+            <div class="item-price">Rp 25.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img
+            src="img/telur ayam organik.jpg"
+            alt="Telur Organik"
+          />
+          <div class="item-detail">
+            <h3>Telur Organik</h3>
+            <div class="item-price">Rp 30.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1><span>Telur Ayam </span>Berkualitas</h1>
+        <p>
+          Menyediakan telur ayam segar berkualitas tinggi langsung dari
+          peternakan organik untuk kebutuhan nutrisi keluarga Anda.
+        </p>
+        <a href="#menu" class="cta">Lihat Produk</a>
+      </main>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img
+            src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=500&h=400&fit=crop"
+            alt="Peternakan Ayam"
+          />
+        </div>
+        <div class="content">
+          <h3>Mengapa Memilih Telur Kami?</h3>
+          <p>
+            ZidomsChickenEgg adalah peternakan keluarga yang telah berdiri sejak
+            2005, yang sudah banyak dipercaya kalangan masyarakat dengan telur yang mantap dan sehat.Tunggu apa lagi beli telur di ZidomsChickenEgg.
+          </p>
+          <p>
+            Setiap telur yang kami hasilkan melalui proses seleksi ketat untuk
+            memastikan kualitas, kesegaran, dan nilai gizi yang optimal untuk
+            keluarga Anda pastinya.
+          </p>
+
+          <div class="features">
+            <div class="feature-item">
+              <i data-feather="award"></i>
+              <h4>Kualitas Premium</h4>
+              <p>Telur berkualitas tinggi dengan standar organik</p>
+            </div>
+            <div class="feature-item">
+              <i data-feather="heart"></i>
+              <h4>Nutrisi Tinggi</h4>
+              <p>Kaya protein dan omega-3 untuk kesehatan optimal</p>
+            </div>
+            <div class="feature-item">
+              <i data-feather="shield"></i>
+              <h4>Terjamin Halal</h4>
+              <p>Bersertifikat halal dan aman untuk dikonsumsi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Menu section start -->
+    <section id="menu" class="menu">
+      <h2><span>Produk</span> Kami</h2>
+      <p>Berbagai pilihan telur berkualitas untuk kebutuhan keluarga Anda.Mantap!!</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/telur omega 3.jpg"
+            alt="Telur Omega 3"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Omega 3</h3>
+          <p class="menu-card-desc">
+            Telur ayam yang diperkaya omega-3, baik untuk kesehatan jantung dan
+            perkembangan otak anak anda supaya lebih pintar
+          </p>
+          <p class="menu-card-price">Rp 25.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Omega 3"
+            data-price="25000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang cuy
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/telur ayam organik.jpg"
+            alt="Telur Organik"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Organik</h3>
+          <p class="menu-card-desc">
+            Telur dari ayam yang diberi pakan organik tanpa antibiotik dan
+            hormon buatan agar lebih sehat bagi anda harus natural
+          </p>
+          <p class="menu-card-price">Rp 30.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Organik"
+            data-price="30000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang cuy
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/telur ayam kampung.jpg"
+            alt="Telur Kampung"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Kampung</h3>
+          <p class="menu-card-desc">
+            Telur ayam kampung asli dengan rasa yang lebih gurih dan kandungan
+            gizi tinggi membuat hidup anda semakin keren
+          </p>
+          <p class="menu-card-price">Rp 35.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Kampung"
+            data-price="35000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang cuy
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/telur_putih.jpg"
+            alt="Telur Putih"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Putih</h3>
+          <p class="menu-card-desc">
+            Telur ayam ras putih dengan kulit putih bersih, cocok untuk berbagai
+            olahan masakan agar lebih mantap
+          </p>
+          <p class="menu-card-price">Rp 20.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Putih"
+            data-price="20000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang cuy
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/Telur ayam gacor.jpg"
+            alt="Telur ayam gacor"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Ayam Gacor</h3>
+          <p class="menu-card-desc">
+            Telur ayam gacor segar dengan kandungan protein tinggi, ideal untuk
+            membuat kue dan martabak agar terasa maksimal.
+          </p>
+          <p class="menu-card-price">Rp 40.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Ayam Gacor"
+            data-price="40000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang cuy
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/telur_premium.jpg"
+            alt="Telur Premium"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Telur Premium</h3>
+          <p class="menu-card-desc">
+            Telur premium dengan ukuran extra large, diperkaya vitamin dan
+            mineral.
+          </p>
+          <p class="menu-card-price">Rp 45.000/lusin</p>
+          <button
+            class="menu-card-btn"
+            data-product="Telur Premium"
+            data-price="45000"
+          >
+            <i data-feather="shopping-cart"></i> Tambah ke Keranjang
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> Kami</h2>
+      <p>Kami siap melayani kebutuhan telur berkualitas Anda</p>
+
+      <div class="row">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i data-feather="map-pin"></i>
+            <div class="contact-detail">
+              <h3>Alamat</h3>
+              <p>Jl. Peternakan Indah No. 123<br />Bandung, Jawa Barat 40123</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i data-feather="phone"></i>
+            <div class="contact-detail">
+              <h3>Telepon</h3>
+              <p>+62 812-3456-7890<br />+62 857-9876-5432</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i data-feather="mail"></i>
+            <div class="contact-detail">
+              <h3>Email</h3>
+              <p>info@zidomschickenegg.com<br />order@zidomschickenegg.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i data-feather="clock"></i>
+            <div class="contact-detail">
+              <h3>Jam Buka</h3>
+              <p>Senin - Sabtu: 06:00 - 18:00<br />Minggu: 07:00 - 15:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="input-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <i data-feather="user"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <i data-feather="mail"></i>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Nomor Telepon"
+              required
+            />
+            <i data-feather="phone"></i>
+          </div>
+
+          <div class="input-group">
+            <select id="subject" name="subject" required>
+              <option value="">Pilih Keperluan</option>
+              <option value="order">Pemesanan Produk</option>
+              <option value="inquiry">Pertanyaan Produk</option>
+              <option value="wholesale">Pembelian Grosir</option>
+              <option value="partnership">Kerjasama</option>
+              <option value="complaint">Keluhan</option>
+            </select>
+            <i data-feather="list"></i>
+          </div>
+
+          <div class="input-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Pesan Anda"
+              rows="5"
+              required
+            ></textarea>
+            <i data-feather="message-square"></i>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <i data-feather="send"></i> Kirim Pesan
+          </button>
+        </form>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8598520114444!2d107.6178478!3d-6.9174639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1642745234567!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokasi ZidomsChickenEgg"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ZidomsChicken<span>Egg</span>.</h3>
+          <p>
+            Peternakan keluarga yang menyediakan telur ayam berkualitas premium
+            untuk kebutuhan nutrisi keluarga Indonesia.
+          </p>
+          <div class="social-links">
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="#">Telur Omega 3</a></li>
+            <li><a href="#">Telur Organik</a></li>
+            <li><a href="#">Telur Kampung</a></li>
+            <li><a href="#">Telur Premium</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Pembelian Grosir</a></li>
+            <li><a href="#">Konsultasi Nutrisi</a></li>
+            <li><a href="#">Program Kemitraan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <ul>
+            <li><i data-feather="map-pin"></i> Bandung, Jawa Barat</li>
+            <li><i data-feather="phone"></i> +62 812-3456-7890</li>
+            <li><i data-feather="mail"></i> info@zidomschickenegg.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 ZidomsChickenEgg. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
